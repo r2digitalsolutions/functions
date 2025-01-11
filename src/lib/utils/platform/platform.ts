@@ -1,5 +1,3 @@
-import { browser } from "$app/environment";
-
 const isMac = (): boolean => {
   return isPlatform("mac");
 };
@@ -13,9 +11,10 @@ const isLinux = (): boolean => {
 };
 
 const isPlatform = (platform: string): boolean => {
-  if (!browser) {
+  if (typeof navigator === undefined) {
     return false;
   }
+
   return navigator.userAgent ? navigator.userAgent?.toLowerCase().includes(platform) : false;
 };
 
