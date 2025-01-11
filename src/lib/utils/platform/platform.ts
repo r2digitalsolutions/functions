@@ -11,12 +11,12 @@ const isLinux = (): boolean => {
 };
 
 const isPlatform = (platform: string): boolean => {
-  if (typeof navigator === undefined) {
+  if (typeof window === 'undefined' || typeof navigator === 'undefined') {
     return false;
   }
-
-  return navigator.userAgent ? navigator.userAgent?.toLowerCase().includes(platform) : false;
+  return navigator.userAgent.toLowerCase().includes(platform.toLowerCase());
 };
+
 
 export const platform = {
   isMac,
