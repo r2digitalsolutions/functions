@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { fnFormatDateTime, fnFormatDateTimeToSelect, fnMonthsForLocale } from "./format.js";
+import { fnFormatDateTime, fnFormatDateTimeToSelect, fnMonthsForLocale, secondsToTime } from "./format.js";
 
 describe("Format", () => {
   test('format should work', async () => {
@@ -62,5 +62,13 @@ describe('fnMonthsForLocale', () => {
       'novembre',
       'décembre',
     ]);
+  });
+
+  test('should return the correct time for a given number of seconds', () => {
+    expect(secondsToTime(0)).toBe('00:00');
+    expect(secondsToTime(10)).toBe('00:10');
+    expect(secondsToTime(60)).toBe('01:00');
+    expect(secondsToTime(180)).toBe('03:00');
+    expect(secondsToTime(3600)).toBe('60:00');
   });
 });
