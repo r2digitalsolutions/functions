@@ -1,6 +1,6 @@
 {
   "name": "@r2digisolutions/functions",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -19,7 +19,9 @@
     "test": "npm run test:unit -- --run && npm run test:e2e",
     "test:e2e": "playwright test",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "changeset:version": "changeset version && git add --all",
+    "changeset:release": "changeset publish"
   },
   "files": [
     "dist",
