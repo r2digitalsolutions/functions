@@ -1,5 +1,7 @@
+import { ClassValue } from "svelte/elements";
+
 export type TProps = {
-  class?: string;
+  class?: ClassValue;
   style?: string;
   [key: string]: any;
 }
