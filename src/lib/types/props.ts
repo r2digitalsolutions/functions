@@ -1,4 +1,4 @@
-import { ClassValue } from "svelte/elements";
+import { type ClassValue } from "svelte/elements";
 
 export type TProps = {
   class?: ClassValue;
