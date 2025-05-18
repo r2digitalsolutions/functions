@@ -1,1 +1,1 @@
-export * from './formdataToObject.ts';
+export * from './formdataToObject.js';
