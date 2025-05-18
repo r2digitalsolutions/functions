@@ -8,3 +8,4 @@ export * from './query/index.js';
 export * from './validation/index.js';
 export * from './cookie/index.js';
 export * from './platform/index.js';
+export * from './mapper/index.js';

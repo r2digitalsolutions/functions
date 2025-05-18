@@ -5,6 +5,9 @@ export default defineConfig({
   plugins: [sveltekit()],
 
   test: {
+    coverage: {
+      provider: 'istanbul' // or 'v8'
+    },
     include: ['src/**/*.{test,spec}.{js,ts}'],
     environment: 'jsdom',
   }
