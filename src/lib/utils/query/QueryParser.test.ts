@@ -154,8 +154,6 @@ describe("QueryParser", () => {
     const parser = new QueryParser(query);
     const result = parser.filter(data);
 
-    console.log(result);
-
     expect(result).toHaveLength(1);
   });
 });
