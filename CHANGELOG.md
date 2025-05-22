@@ -1,5 +1,11 @@
 # @r2digisolutions/functions
 
+## 0.5.0
+
+### Minor Changes
+
+- feat: add url compress
+
 ## 0.4.0
 
 ### Minor Changes
