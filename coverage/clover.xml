@@ -1,408 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1747899715398" clover="3.2.0">
-  <project timestamp="1747899715398" name="All files">
-    <metrics statements="258" coveredstatements="240" conditionals="2131" coveredconditionals="121" methods="578" coveredmethods="77" elements="2967" coveredelements="438" complexity="0" loc="258" ncloc="258" packages="18" files="30" classes="30"/>
-    <package name="functions">
-      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="svelte.config.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/svelte.config.js">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="5" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.build._app">
-      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="env.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/build/_app/env.js">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.build._app.immutable.chunks">
-      <metrics statements="8" coveredstatements="0" conditionals="1729" coveredconditionals="0" methods="367" coveredmethods="0"/>
-      <file name="B3zPudE1.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/build/_app/immutable/chunks/B3zPudE1.js">
-        <metrics statements="1" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="10"/>
-      </file>
-      <file name="BQdGC1Qf.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/build/_app/immutable/chunks/BQdGC1Qf.js">
-        <metrics statements="3" coveredstatements="0" conditionals="993" coveredconditionals="0" methods="213" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="926"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="cond" truecount="0" falsecount="67"/>
-      </file>
-      <file name="ChonzpeX.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/build/_app/immutable/chunks/ChonzpeX.js">
-        <metrics statements="1" coveredstatements="0" conditionals="94" coveredconditionals="0" methods="13" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="94"/>
-      </file>
-      <file name="D5I1ZBgL.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/build/_app/immutable/chunks/D5I1ZBgL.js">
-        <metrics statements="1" coveredstatements="0" conditionals="599" coveredconditionals="0" methods="130" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="599"/>
-      </file>
-      <file name="DKzhmFSX.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/build/_app/immutable/chunks/DKzhmFSX.js">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-      </file>
-      <file name="x5dqPZRm.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/build/_app/immutable/chunks/x5dqPZRm.js">
-        <metrics statements="1" coveredstatements="0" conditionals="33" coveredconditionals="0" methods="7" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="33"/>
-      </file>
-    </package>
-    <package name="functions.build._app.immutable.entry">
-      <metrics statements="2" coveredstatements="0" conditionals="238" coveredconditionals="0" methods="113" coveredmethods="0"/>
-      <file name="app.fIF3wo4Y.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/build/_app/immutable/entry/app.fIF3wo4Y.js">
-        <metrics statements="2" coveredstatements="0" conditionals="238" coveredconditionals="0" methods="113" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="2" count="0" type="cond" truecount="0" falsecount="234"/>
-      </file>
-    </package>
-    <package name="functions.build._app.immutable.nodes">
-      <metrics statements="3" coveredstatements="0" conditionals="25" coveredconditionals="0" methods="20" coveredmethods="0"/>
-      <file name="0.DIcfcAGm.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/build/_app/immutable/nodes/0.DIcfcAGm.js">
-        <metrics statements="1" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="6"/>
-      </file>
-      <file name="1.6N1QYDTV.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/build/_app/immutable/nodes/1.6N1QYDTV.js">
-        <metrics statements="1" coveredstatements="0" conditionals="19" coveredconditionals="0" methods="14" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="19"/>
-      </file>
-      <file name="2.CjuWt3vP.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/build/_app/immutable/nodes/2.CjuWt3vP.js">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.array">
-      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <file name="groupBy.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/array/groupBy.ts">
-        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.className">
-      <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3"/>
-      <file name="className.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/className/className.ts">
-        <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3"/>
-        <line num="2" count="6" type="stmt"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="5" count="16" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="9" count="13" type="cond" truecount="2" falsecount="0"/>
-        <line num="10" count="10" type="stmt"/>
-        <line num="11" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="20" count="6" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.convert">
-      <metrics statements="58" coveredstatements="58" conditionals="31" coveredconditionals="31" methods="9" coveredmethods="9"/>
-      <file name="convert.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/convert/convert.ts">
-        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="5" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="5" type="stmt"/>
-      </file>
-      <file name="humanize.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/convert/humanize.ts">
-        <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="2" count="8" type="stmt"/>
-        <line num="3" count="8" type="stmt"/>
-        <line num="4" count="8" type="stmt"/>
-        <line num="5" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="8" type="stmt"/>
-        <line num="7" count="8" type="stmt"/>
-        <line num="8" count="8" type="stmt"/>
-        <line num="10" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="8" type="stmt"/>
-      </file>
-      <file name="replace.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/convert/replace.ts">
-        <metrics statements="10" coveredstatements="10" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
-        <line num="11" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="13" count="6" type="stmt"/>
-        <line num="14" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="22" count="5" type="stmt"/>
-        <line num="25" count="5" type="stmt"/>
-        <line num="35" count="5" type="stmt"/>
-        <line num="38" count="5" type="stmt"/>
-        <line num="41" count="5" type="stmt"/>
-        <line num="43" count="5" type="stmt"/>
-      </file>
-      <file name="timeTask.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/convert/timeTask.ts">
-        <metrics statements="33" coveredstatements="33" conditionals="18" coveredconditionals="18" methods="3" coveredmethods="3"/>
-        <line num="15" count="17" type="stmt"/>
-        <line num="22" count="17" type="stmt"/>
-        <line num="26" count="17" type="cond" truecount="2" falsecount="0"/>
-        <line num="30" count="14" type="stmt"/>
-        <line num="32" count="21" type="stmt"/>
-        <line num="33" count="21" type="stmt"/>
-        <line num="36" count="21" type="stmt"/>
-        <line num="39" count="14" type="stmt"/>
-        <line num="50" count="8" type="stmt"/>
-        <line num="53" count="8" type="stmt"/>
-        <line num="56" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="57" count="1" type="stmt"/>
-        <line num="60" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="61" count="2" type="stmt"/>
-        <line num="64" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="65" count="2" type="stmt"/>
-        <line num="68" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="69" count="2" type="stmt"/>
-        <line num="72" count="8" type="stmt"/>
-        <line num="83" count="6" type="stmt"/>
-        <line num="84" count="6" type="stmt"/>
-        <line num="85" count="6" type="stmt"/>
-        <line num="86" count="6" type="stmt"/>
-        <line num="89" count="6" type="stmt"/>
-        <line num="90" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="91" count="2" type="stmt"/>
-        <line num="95" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="96" count="2" type="stmt"/>
-        <line num="100" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="101" count="2" type="stmt"/>
-        <line num="105" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="106" count="2" type="stmt"/>
-        <line num="109" count="6" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.cookie">
-      <metrics statements="13" coveredstatements="13" conditionals="7" coveredconditionals="7" methods="3" coveredmethods="3"/>
-      <file name="cookie.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/cookie/cookie.ts">
-        <metrics statements="13" coveredstatements="13" conditionals="7" coveredconditionals="7" methods="3" coveredmethods="3"/>
-        <line num="9" count="3" type="cond" truecount="4" falsecount="0"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="26" count="3" type="stmt"/>
-        <line num="27" count="3" type="stmt"/>
-        <line num="28" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.date">
-      <metrics statements="26" coveredstatements="26" conditionals="6" coveredconditionals="4" methods="7" coveredmethods="7"/>
-      <file name="format.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/date/format.ts">
-        <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="5"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="36" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="5" type="stmt"/>
-        <line num="26" count="5" type="stmt"/>
-        <line num="27" count="5" type="stmt"/>
-        <line num="29" count="5" type="stmt"/>
-      </file>
-      <file name="timeAgo.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/date/timeAgo.ts">
-        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="13" type="stmt"/>
-        <line num="3" count="13" type="stmt"/>
-        <line num="5" count="13" type="stmt"/>
-        <line num="14" count="13" type="stmt"/>
-        <line num="15" count="48" type="stmt"/>
-        <line num="16" count="48" type="stmt"/>
-        <line num="18" count="48" type="cond" truecount="2" falsecount="0"/>
-        <line num="19" count="11" type="cond" truecount="2" falsecount="0"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.mapper">
-      <metrics statements="25" coveredstatements="25" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
-      <file name="formdataToObject.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/mapper/formdataToObject.ts">
-        <metrics statements="25" coveredstatements="25" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
-        <line num="2" count="16" type="stmt"/>
-        <line num="3" count="16" type="stmt"/>
-        <line num="6" count="16" type="stmt"/>
-        <line num="7" count="32" type="cond" truecount="2" falsecount="0"/>
-        <line num="8" count="32" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="32" type="stmt"/>
-        <line num="12" count="16" type="stmt"/>
-        <line num="16" count="16" type="stmt"/>
-        <line num="18" count="16" type="stmt"/>
-        <line num="19" count="32" type="stmt"/>
-        <line num="20" count="32" type="stmt"/>
-        <line num="22" count="32" type="cond" truecount="2" falsecount="0"/>
-        <line num="23" count="16" type="stmt"/>
-        <line num="25" count="16" type="cond" truecount="2" falsecount="0"/>
-        <line num="26" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="28" count="16" type="stmt"/>
-        <line num="34" count="2" type="stmt"/>
-        <line num="36" count="2" type="stmt"/>
-        <line num="37" count="16" type="stmt"/>
-        <line num="38" count="16" type="stmt"/>
-        <line num="39" count="16" type="stmt"/>
-        <line num="42" count="2" type="stmt"/>
-        <line num="67" count="2" type="stmt"/>
-        <line num="68" count="2" type="stmt"/>
-        <line num="69" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.platform">
-      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
-      <file name="platform.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/platform/platform.ts">
-        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="4" type="cond" truecount="4" falsecount="0"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.query">
-      <metrics statements="77" coveredstatements="75" conditionals="68" coveredconditionals="53" methods="38" coveredmethods="37"/>
-      <file name="QueryParser.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/query/QueryParser.ts">
-        <metrics statements="77" coveredstatements="75" conditionals="68" coveredconditionals="53" methods="38" coveredmethods="37"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="31" count="25" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-        <line num="34" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="40" count="23" type="stmt"/>
-        <line num="42" count="2" type="stmt"/>
-        <line num="43" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="49" count="21" type="cond" truecount="3" falsecount="0"/>
-        <line num="51" count="2" type="stmt"/>
-        <line num="52" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="54" count="1" type="stmt"/>
-        <line num="58" count="19" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
-        <line num="61" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="63" count="0" type="stmt"/>
-        <line num="67" count="18" type="stmt"/>
-        <line num="69" count="2" type="stmt"/>
-        <line num="70" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="72" count="1" type="stmt"/>
-        <line num="76" count="16" type="cond" truecount="2" falsecount="0"/>
-        <line num="78" count="2" type="stmt"/>
-        <line num="79" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="81" count="1" type="stmt"/>
-        <line num="85" count="14" type="stmt"/>
-        <line num="87" count="2" type="stmt"/>
-        <line num="88" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="90" count="1" type="stmt"/>
-        <line num="94" count="12" type="stmt"/>
-        <line num="96" count="3" type="stmt"/>
-        <line num="97" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="99" count="1" type="stmt"/>
-        <line num="103" count="9" type="stmt"/>
-        <line num="105" count="3" type="stmt"/>
-        <line num="106" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="108" count="1" type="stmt"/>
-        <line num="112" count="6" type="stmt"/>
-        <line num="114" count="2" type="stmt"/>
-        <line num="115" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="117" count="1" type="stmt"/>
-        <line num="122" count="7" type="stmt"/>
-        <line num="125" count="7" type="stmt"/>
-        <line num="130" count="7" type="stmt"/>
-        <line num="131" count="7" type="stmt"/>
-        <line num="133" count="7" type="stmt"/>
-        <line num="134" count="25" type="stmt"/>
-        <line num="135" count="163" type="cond" truecount="2" falsecount="0"/>
-        <line num="136" count="21" type="stmt"/>
-        <line num="137" count="21" type="cond" truecount="1" falsecount="1"/>
-        <line num="138" count="21" type="stmt"/>
-        <line num="139" count="21" type="stmt"/>
-        <line num="140" count="21" type="stmt"/>
-        <line num="146" count="7" type="cond" truecount="1" falsecount="1"/>
-        <line num="147" count="7" type="stmt"/>
-        <line num="151" count="1" type="cond" truecount="3" falsecount="1"/>
-        <line num="153" count="1" type="stmt"/>
-        <line num="154" count="51" type="stmt"/>
-        <line num="155" count="9" type="cond" truecount="1" falsecount="1"/>
-        <line num="158" count="1" type="stmt"/>
-        <line num="162" count="4" type="stmt"/>
-        <line num="163" count="4" type="cond" truecount="4" falsecount="0"/>
-        <line num="165" count="2" type="stmt"/>
-        <line num="166" count="4" type="stmt"/>
-        <line num="167" count="15" type="stmt"/>
-        <line num="168" count="15" type="cond" truecount="10" falsecount="1"/>
-        <line num="169" count="1" type="stmt"/>
-        <line num="170" count="1" type="stmt"/>
-        <line num="171" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="172" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="173" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="174" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="175" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="176" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="177" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="178" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="179" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.random">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="random.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/random/random.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.sleep">
-      <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
-      <file name="sleep.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/sleep/sleep.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="2" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.text">
-      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
-      <file name="capitalize.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/text/capitalize.ts">
-        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-      </file>
-      <file name="slug.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/text/slug.ts">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="5" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.lib.utils.validation">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="time.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/validation/time.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="13" count="9" type="stmt"/>
-        <line num="14" count="9" type="stmt"/>
-      </file>
-    </package>
-    <package name="functions.src.routes">
-      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="+layout.server.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/routes/+layout.server.ts">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-      </file>
-    </package>
+<coverage generated="1747911658162" clover="3.2.0">
+  <project timestamp="1747911658162" name="All files">
+    <metrics statements="108" coveredstatements="103" conditionals="89" coveredconditionals="70" methods="62" coveredmethods="61" elements="259" coveredelements="234" complexity="0" loc="108" ncloc="108" packages="1" files="1" classes="1"/>
+    <file name="QueryParser.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/query/QueryParser.ts">
+      <metrics statements="108" coveredstatements="103" conditionals="89" coveredconditionals="70" methods="62" coveredmethods="61"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="34" count="27" type="stmt"/>
+      <line num="36" count="2" type="stmt"/>
+      <line num="37" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="40" count="1" type="cond" truecount="3" falsecount="0"/>
+      <line num="44" count="25" type="stmt"/>
+      <line num="46" count="3" type="stmt"/>
+      <line num="47" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="49" count="1" type="stmt"/>
+      <line num="50" count="1" type="stmt"/>
+      <line num="54" count="23" type="cond" truecount="3" falsecount="0"/>
+      <line num="56" count="3" type="stmt"/>
+      <line num="57" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="59" count="1" type="stmt"/>
+      <line num="60" count="1" type="stmt"/>
+      <line num="64" count="21" type="stmt"/>
+      <line num="66" count="1" type="stmt"/>
+      <line num="67" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="69" count="1" type="stmt"/>
+      <line num="70" count="1" type="cond" truecount="3" falsecount="0"/>
+      <line num="74" count="20" type="stmt"/>
+      <line num="76" count="2" type="stmt"/>
+      <line num="77" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="79" count="1" type="stmt"/>
+      <line num="80" count="1" type="cond" truecount="3" falsecount="0"/>
+      <line num="84" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="86" count="2" type="stmt"/>
+      <line num="87" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="89" count="1" type="stmt"/>
+      <line num="90" count="1" type="cond" truecount="3" falsecount="0"/>
+      <line num="94" count="16" type="stmt"/>
+      <line num="96" count="2" type="stmt"/>
+      <line num="97" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="99" count="1" type="stmt"/>
+      <line num="100" count="1" type="cond" truecount="3" falsecount="0"/>
+      <line num="104" count="14" type="stmt"/>
+      <line num="106" count="3" type="stmt"/>
+      <line num="107" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="109" count="1" type="stmt"/>
+      <line num="110" count="4" type="cond" truecount="3" falsecount="0"/>
+      <line num="114" count="11" type="stmt"/>
+      <line num="116" count="3" type="stmt"/>
+      <line num="117" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="119" count="1" type="stmt"/>
+      <line num="120" count="4" type="cond" truecount="3" falsecount="0"/>
+      <line num="124" count="8" type="stmt"/>
+      <line num="126" count="2" type="stmt"/>
+      <line num="127" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="129" count="1" type="stmt"/>
+      <line num="130" count="1" type="cond" truecount="3" falsecount="0"/>
+      <line num="134" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="136" count="2" type="stmt"/>
+      <line num="137" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="138" count="1" type="stmt"/>
+      <line num="139" count="2" type="stmt"/>
+      <line num="140" count="2" type="stmt"/>
+      <line num="141" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="143" count="1" type="stmt"/>
+      <line num="146" count="2" type="stmt"/>
+      <line num="147" count="1" type="stmt"/>
+      <line num="149" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="153" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="155" count="1" type="stmt"/>
+      <line num="156" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="157" count="1" type="stmt"/>
+      <line num="158" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="159" count="1" type="stmt"/>
+      <line num="160" count="2" type="stmt"/>
+      <line num="161" count="2" type="stmt"/>
+      <line num="162" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="164" count="1" type="stmt"/>
+      <line num="166" count="0" type="stmt"/>
+      <line num="167" count="0" type="stmt"/>
+      <line num="168" count="0" type="stmt"/>
+      <line num="169" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="171" count="0" type="stmt"/>
+      <line num="174" count="2" type="stmt"/>
+      <line num="175" count="1" type="stmt"/>
+      <line num="177" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="182" count="9" type="stmt"/>
+      <line num="185" count="9" type="stmt"/>
+      <line num="190" count="9" type="stmt"/>
+      <line num="191" count="9" type="stmt"/>
+      <line num="193" count="9" type="stmt"/>
+      <line num="194" count="27" type="stmt"/>
+      <line num="195" count="194" type="cond" truecount="2" falsecount="0"/>
+      <line num="196" count="26" type="stmt"/>
+      <line num="197" count="26" type="cond" truecount="2" falsecount="0"/>
+      <line num="198" count="23" type="stmt"/>
+      <line num="199" count="23" type="stmt"/>
+      <line num="200" count="23" type="stmt"/>
+      <line num="206" count="9" type="cond" truecount="1" falsecount="1"/>
+      <line num="207" count="9" type="stmt"/>
+      <line num="211" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="213" count="1" type="stmt"/>
+      <line num="214" count="78" type="stmt"/>
+      <line num="215" count="12" type="cond" truecount="1" falsecount="1"/>
+      <line num="218" count="1" type="stmt"/>
+      <line num="222" count="6" type="stmt"/>
+      <line num="223" count="6" type="cond" truecount="4" falsecount="0"/>
+      <line num="225" count="4" type="stmt"/>
+      <line num="226" count="10" type="stmt"/>
+      <line num="227" count="175" type="stmt"/>
+      <line num="228" count="22" type="cond" truecount="1" falsecount="1"/>
+      <line num="230" count="22" type="stmt"/>
+      <line num="231" count="22" type="stmt"/>
+      <line num="234" count="10" type="cond" truecount="1" falsecount="1"/>
+    </file>
   </project>
 </coverage>

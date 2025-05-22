@@ -47,13 +47,16 @@ describe("QueryParser", () => {
         ["title", "is_not_empty", ""],
         ["age", "greater_than", 20],
         ["age", "less_than", 40],
+        ["age", "in", [25, 30]],
+        ["age", "not_in", [25, 30]],
+        ["title", "contains", "Lead"],
       ],
     };
 
     const parser = new QueryParser("");
     const queryString = parser.toQueryString(queryStructure);
 
-    const expectedQuery = `name="Alice" and name!:"admin" and age!="30" and name^"A" and name$"e" and description? and title!? and age>20 and age<40`;
+    const expectedQuery = `name="Alice" and name!:"admin" and age!="30" and name^"A" and name$"e" and description? and title!? and age>20 and age<40 and age=["25","30"] and age!=["25","30"] and title:"Lead"`;
 
     expect(queryString).toBe(expectedQuery);
   });
@@ -123,6 +126,37 @@ describe("QueryParser", () => {
 
     const filtered = parser.filter([{ field: "value" }]);
     expect(filtered).toHaveLength(1);
+  });
+  it("IN operator", () => {
+    const data = [
+      { name: "Alice", age: 25, description: "", title: "Manager" },
+      { name: "Bob", age: 30, description: "desc", title: "" },
+      { name: "Ann", age: 35, description: "", title: "Lead" },
+    ];
+
+    const query = `age=[25,30]`;
+    const parser = new QueryParser(query);
+    const result = parser.filter(data);
+
+    console.log(result);
+
+    expect(result).toHaveLength(2);
+  });
+
+  it("NOT IN operator", () => {
+    const data = [
+      { name: "Alice", age: 25, description: "", title: "Manager" },
+      { name: "Bob", age: 30, description: "desc", title: "" },
+      { name: "Ann", age: 35, description: "", title: "Lead" },
+    ];
+
+    const query = `age!=[25,30]`;
+    const parser = new QueryParser(query);
+    const result = parser.filter(data);
+
+    console.log(result);
+
+    expect(result).toHaveLength(1);
   });
 });
 

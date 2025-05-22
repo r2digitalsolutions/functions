@@ -8,9 +8,11 @@ export type FilterOperator =
   | "not_equals"
   | "not_contains"
   | "is_empty"
-  | "is_not_empty";
+  | "is_not_empty"
+  | "in"
+  | "not_in";
 
-export type Filter = [string, FilterOperator, string | number];
+export type Filter = [string, FilterOperator, string | number | (string | number)[]];
 
 export type QueryStructure = {
   useQuery: boolean;
@@ -23,6 +25,7 @@ type OperatorHandler = {
   test: (exp: string) => boolean;
   parse: (exp: string) => Filter | null;
   serialize: (filter: Filter) => string;
+  match: (itemValue: any, filterValue: any) => boolean; // 🔥 Nueva función
 };
 
 const operatorHandlers: OperatorHandler[] = [
@@ -34,6 +37,7 @@ const operatorHandlers: OperatorHandler[] = [
       return match ? [match[1], "not_contains", match[2]] : null;
     },
     serialize: ([field, , value]) => `${field}!:"${value}"`,
+    match: (v, val) => typeof v === "string" && typeof val === "string" && !v.includes(val),
   },
   {
     operator: "not_equals",
@@ -43,6 +47,7 @@ const operatorHandlers: OperatorHandler[] = [
       return match ? [match[1], "not_equals", match[2]] : null;
     },
     serialize: ([field, , value]) => `${field}!="${value}"`,
+    match: (v, val) => v !== val,
   },
   {
     operator: "equals",
@@ -52,6 +57,7 @@ const operatorHandlers: OperatorHandler[] = [
       return match ? [match[1], "equals", match[2]] : null;
     },
     serialize: ([field, , value]) => `${field}="${value}"`,
+    match: (v, val) => v === val,
   },
   {
     operator: "contains",
@@ -61,6 +67,7 @@ const operatorHandlers: OperatorHandler[] = [
       return match ? [match[1], "contains", match[2]] : null;
     },
     serialize: ([field, , value]) => `${field}:"${value}"`,
+    match: (v, val) => typeof v === "string" && typeof val === "string" && v.includes(val),
   },
   {
     operator: "is_not_empty",
@@ -70,6 +77,7 @@ const operatorHandlers: OperatorHandler[] = [
       return match ? [match[1], "is_not_empty", ""] : null;
     },
     serialize: ([field]) => `${field}!?`,
+    match: (v) => v !== undefined && v !== null && v !== "",
   },
   {
     operator: "is_empty",
@@ -79,6 +87,7 @@ const operatorHandlers: OperatorHandler[] = [
       return match ? [match[1], "is_empty", ""] : null;
     },
     serialize: ([field]) => `${field}?`,
+    match: (v) => v === undefined || v === null || v === "",
   },
   {
     operator: "greater_than",
@@ -88,6 +97,7 @@ const operatorHandlers: OperatorHandler[] = [
       return match ? [match[1], "greater_than", parseInt(match[2], 10)] : null;
     },
     serialize: ([field, , value]) => `${field}>${value}`,
+    match: (v, val) => typeof v === "number" && typeof val === "number" && v > val,
   },
   {
     operator: "less_than",
@@ -97,6 +107,7 @@ const operatorHandlers: OperatorHandler[] = [
       return match ? [match[1], "less_than", parseInt(match[2], 10)] : null;
     },
     serialize: ([field, , value]) => `${field}<${value}`,
+    match: (v, val) => typeof v === "number" && typeof val === "number" && v < val,
   },
   {
     operator: "starts_with",
@@ -106,6 +117,7 @@ const operatorHandlers: OperatorHandler[] = [
       return match ? [match[1], "starts_with", match[2]] : null;
     },
     serialize: ([field, , value]) => `${field}^"${value}"`,
+    match: (v, val) => typeof v === "string" && typeof val === "string" && v.startsWith(val),
   },
   {
     operator: "ends_with",
@@ -115,7 +127,55 @@ const operatorHandlers: OperatorHandler[] = [
       return match ? [match[1], "ends_with", match[2]] : null;
     },
     serialize: ([field, , value]) => `${field}$"${value}"`,
+    match: (v, val) => typeof v === "string" && typeof val === "string" && v.endsWith(val),
   },
+  {
+    operator: "in",
+    test: (exp) => exp.includes("=[") && exp.includes("]"),
+    parse: (exp) => {
+      const match = exp.match(/(\w+)=\[(.+?)\]/);
+      if (!match) return null;
+      const values = match[2].split(",").map(v => {
+        const trimmed = v.trim().replace(/^"|"$/g, '');
+        const num = Number(trimmed);
+        return isNaN(num) ? trimmed : num;
+      });
+      return [match[1], "in", values];
+    },
+    serialize: ([field, , value]) => {
+      const list = (value as (string | number)[]).map(v => `"${v}"`).join(",");
+      return `${field}=[${list}]`;
+    },
+    match: (v, val) => Array.isArray(val) && val.includes(v),
+  },
+  {
+    operator: "not_in",
+    test: (exp) => exp.includes("!=") && exp.includes("["),
+    parse: (exp) => {
+      const match = exp.match(/(\w+)!="\[(.+?)\]"/); // legacy-style edge case
+      if (!match) {
+        const match2 = exp.match(/(\w+)!=\[(.+?)\]/);
+        if (!match2) return null;
+        const values = match2[2].split(",").map(v => {
+          const trimmed = v.trim().replace(/^"|"$/g, '');
+          const num = Number(trimmed);
+          return isNaN(num) ? trimmed : num;
+        });
+        return [match2[1], "not_in", values];
+      }
+      const values = match[2].split(",").map(v => {
+        const trimmed = v.trim().replace(/^"|"$/g, '');
+        const num = Number(trimmed);
+        return isNaN(num) ? trimmed : num;
+      });
+      return [match[1], "not_in", values];
+    },
+    serialize: ([field, , value]) => {
+      const list = (value as (string | number)[]).map(v => `"${v}"`).join(",");
+      return `${field}!=[${list}]`;
+    },
+    match: (v, val) => Array.isArray(val) && !val.includes(v),
+  }
 ];
 
 export class QueryParser {
@@ -159,26 +219,19 @@ export class QueryParser {
   }
 
   filter<T>(data: T[]): T[] {
-    const { filters, useQuery } = this.parse();
+    const { filters, useQuery, joinOperation } = this.parse();
     if (!useQuery || filters.length === 0) return data;
 
-    return data.filter((item) =>
-      filters.every(([field, op, val]) => {
-        const v = item[field as keyof T];
-        switch (op) {
-          case "equals": return v === val;
-          case "not_equals": return v !== val;
-          case "contains": return typeof v === "string" && v.includes(String(val));
-          case "not_contains": return typeof v === "string" && !v.includes(String(val));
-          case "starts_with": return typeof v === "string" && v.startsWith(String(val));
-          case "ends_with": return typeof v === "string" && v.endsWith(String(val));
-          case "greater_than": return typeof v === "number" && v > Number(val);
-          case "less_than": return typeof v === "number" && v < Number(val);
-          case "is_empty": return v == null || v === "";
-          case "is_not_empty": return v != null && v !== "";
-          default: return false;
-        }
-      })
-    );
+    return data.filter((item) => {
+      const results = filters.map(([field, op, val]) => {
+        const handler = operatorHandlers.find(h => h.operator === op);
+        if (!handler) return false;
+
+        const itemValue = item[field as keyof T];
+        return handler.match(itemValue, val);
+      });
+
+      return joinOperation === "OR" ? results.some(Boolean) : results.every(Boolean);
+    });
   }
 }
