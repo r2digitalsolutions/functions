@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1747563807318" clover="3.2.0">
-  <project timestamp="1747563807318" name="All files">
-    <metrics statements="223" coveredstatements="207" conditionals="2092" coveredconditionals="93" methods="545" coveredmethods="45" elements="2860" coveredelements="345" complexity="0" loc="223" ncloc="223" packages="18" files="30" classes="30"/>
+<coverage generated="1747899715398" clover="3.2.0">
+  <project timestamp="1747899715398" name="All files">
+    <metrics statements="258" coveredstatements="240" conditionals="2131" coveredconditionals="121" methods="578" coveredmethods="77" elements="2967" coveredelements="438" complexity="0" loc="258" ncloc="258" packages="18" files="30" classes="30"/>
     <package name="functions">
       <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="svelte.config.js" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/svelte.config.js">
@@ -251,9 +251,9 @@
         <line num="38" count="16" type="stmt"/>
         <line num="39" count="16" type="stmt"/>
         <line num="42" count="2" type="stmt"/>
-        <line num="46" count="2" type="stmt"/>
-        <line num="47" count="2" type="stmt"/>
-        <line num="48" count="2" type="stmt"/>
+        <line num="67" count="2" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
       </file>
     </package>
     <package name="functions.src.lib.utils.platform">
@@ -274,51 +274,86 @@
       </file>
     </package>
     <package name="functions.src.lib.utils.query">
-      <metrics statements="42" coveredstatements="42" conditionals="29" coveredconditionals="25" methods="5" coveredmethods="5"/>
+      <metrics statements="77" coveredstatements="75" conditionals="68" coveredconditionals="53" methods="38" coveredmethods="37"/>
       <file name="QueryParser.ts" path="/Users/rafael.gonzalezmunoz/Development/r2digisolutions/functions/src/lib/utils/query/QueryParser.ts">
-        <metrics statements="42" coveredstatements="42" conditionals="29" coveredconditionals="25" methods="5" coveredmethods="5"/>
-        <line num="14" count="9" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="20" count="5" type="stmt"/>
-        <line num="22" count="5" type="stmt"/>
-        <line num="23" count="5" type="stmt"/>
-        <line num="25" count="11" type="cond" truecount="2" falsecount="0"/>
-        <line num="26" count="3" type="stmt"/>
-        <line num="27" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="28" count="3" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
-        <line num="31" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="3" type="stmt"/>
-        <line num="33" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="34" count="3" type="stmt"/>
-        <line num="35" count="3" type="stmt"/>
-        <line num="37" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="38" count="2" type="stmt"/>
-        <line num="39" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="40" count="2" type="stmt"/>
-        <line num="41" count="2" type="stmt"/>
-        <line num="43" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="44" count="2" type="stmt"/>
-        <line num="45" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="46" count="2" type="stmt"/>
-        <line num="47" count="2" type="stmt"/>
-        <line num="52" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="53" count="2" type="stmt"/>
-        <line num="54" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="55" count="1" type="stmt"/>
-        <line num="58" count="5" type="stmt"/>
-        <line num="62" count="4" type="cond" truecount="4" falsecount="0"/>
-        <line num="63" count="1" type="stmt"/>
-        <line num="66" count="3" type="stmt"/>
-        <line num="67" count="9" type="stmt"/>
-        <line num="68" count="9" type="cond" truecount="5" falsecount="0"/>
-        <line num="70" count="2" type="stmt"/>
-        <line num="72" count="2" type="stmt"/>
-        <line num="74" count="1" type="stmt"/>
-        <line num="76" count="1" type="stmt"/>
-        <line num="78" count="3" type="stmt"/>
-        <line num="82" count="3" type="stmt"/>
+        <metrics statements="77" coveredstatements="75" conditionals="68" coveredconditionals="53" methods="38" coveredmethods="37"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="25" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="40" count="23" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="49" count="21" type="cond" truecount="3" falsecount="0"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="52" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="58" count="19" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="67" count="18" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="70" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="76" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="79" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="85" count="14" type="stmt"/>
+        <line num="87" count="2" type="stmt"/>
+        <line num="88" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="94" count="12" type="stmt"/>
+        <line num="96" count="3" type="stmt"/>
+        <line num="97" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="99" count="1" type="stmt"/>
+        <line num="103" count="9" type="stmt"/>
+        <line num="105" count="3" type="stmt"/>
+        <line num="106" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="108" count="1" type="stmt"/>
+        <line num="112" count="6" type="stmt"/>
+        <line num="114" count="2" type="stmt"/>
+        <line num="115" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="117" count="1" type="stmt"/>
+        <line num="122" count="7" type="stmt"/>
+        <line num="125" count="7" type="stmt"/>
+        <line num="130" count="7" type="stmt"/>
+        <line num="131" count="7" type="stmt"/>
+        <line num="133" count="7" type="stmt"/>
+        <line num="134" count="25" type="stmt"/>
+        <line num="135" count="163" type="cond" truecount="2" falsecount="0"/>
+        <line num="136" count="21" type="stmt"/>
+        <line num="137" count="21" type="cond" truecount="1" falsecount="1"/>
+        <line num="138" count="21" type="stmt"/>
+        <line num="139" count="21" type="stmt"/>
+        <line num="140" count="21" type="stmt"/>
+        <line num="146" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="147" count="7" type="stmt"/>
+        <line num="151" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="153" count="1" type="stmt"/>
+        <line num="154" count="51" type="stmt"/>
+        <line num="155" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="158" count="1" type="stmt"/>
+        <line num="162" count="4" type="stmt"/>
+        <line num="163" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="165" count="2" type="stmt"/>
+        <line num="166" count="4" type="stmt"/>
+        <line num="167" count="15" type="stmt"/>
+        <line num="168" count="15" type="cond" truecount="10" falsecount="1"/>
+        <line num="169" count="1" type="stmt"/>
+        <line num="170" count="1" type="stmt"/>
+        <line num="171" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="172" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="173" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="174" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="175" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="176" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="177" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="178" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="179" count="0" type="stmt"/>
       </file>
     </package>
     <package name="functions.src.lib.utils.random">
