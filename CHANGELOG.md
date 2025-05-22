@@ -1,5 +1,11 @@
 # @r2digisolutions/functions
 
+## 0.5.1
+
+### Patch Changes
+
+- fix: parser
+
 ## 0.5.0
 
 ### Minor Changes
