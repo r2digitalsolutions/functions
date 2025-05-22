@@ -34,7 +34,7 @@ describe("QueryParser", () => {
   });
 
   it("should serialize query structure correctly", () => {
-    const queryStructure = {
+    const queryStructure: QueryStructure = {
       useQuery: true,
       joinOperation: "AND",
       filters: [
